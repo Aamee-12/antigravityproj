@@ -1,0 +1,45 @@
+export default {
+  nav_dashboard: "डैशबोर्ड",
+  nav_assistant: "एआई सहायक",
+  nav_insights: "अंतर्दृष्टि",
+  nav_actions: "कार्रवाई",
+  nav_scanner: "नागरिक विज्ञान",
+  nav_community: "समुदाय",
+  nav_profile: "प्रोफ़ाइल",
+  nav_settings: "सेटिंग्स",
+
+  welcome_back: "वापसी पर स्वागत है,",
+  overview_text: "यहाँ आपका जलवायु प्रभाव अवलोकन है",
+  location: "बेंगलुरु, भारत",
+
+  eco_score: "इको स्कोर",
+  great_job: "बहुत बढ़िया! 🎉",
+  this_week_pts: "इस सप्ताह +12",
+  water_saved: "पानी बचाया",
+  energy_saved: "ऊर्जा बचाई",
+  co2_saved: "CO₂ बचाया",
+  this_week: "इस सप्ताह",
+
+  live_alerts: "लाइव अलर्ट",
+  recent_activity: "हाल की गतिविधि",
+  view_all: "सभी देखें",
+  aqi_poor: "AQI: 180 (खराब)",
+  aqi_desc: "कोरामंगला - बाहर मास्क पहनें",
+  heatwave: "हीटवेव अलर्ट",
+  heatwave_desc: "पानी पिएं, दोपहर 12-4 की धूप से बचें",
+  pts: "अंक",
+  just_now: "अभी",
+
+  ai_title: "एआई वॉयस असिस्टेंट",
+  voice_on: "आवाज़ चालू",
+  voice_muted: "आवाज़ बंद",
+  listening: "सुन रहा हूँ...",
+  type_question: "कोई प्रश्न टाइप करें या बोलें...",
+  bot_hello: "नमस्ते! मैं Eco Setu हूँ। अपने कार्बन फुटप्रिंट, स्थानीय बेंगलुरु जलवायु डेटा, या अपना इको स्कोर सुधारने के बारे में कुछ भी पूछें।",
+
+  welcome_title: "बेंगलुरु की जलवायु बदल रही है। आप ही समाधान हैं।",
+  welcome_subtitle: "अपने फुटप्रिंट को ट्रैक करने, स्थानीय मुद्दों को दर्ज करने और पुरस्कार अर्जित करने के लिए आंदोलन में शामिल हों।",
+  enter_name: "आपका नाम क्या है?",
+  select_lang: "अपनी भाषा चुनें",
+  start_journey: "यात्रा शुरू करें"
+};
