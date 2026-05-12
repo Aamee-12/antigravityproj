@@ -36,7 +36,7 @@ function App() {
   return (
     <LanguageProvider>
       <AppProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <AppRoutes />
         </BrowserRouter>
       </AppProvider>

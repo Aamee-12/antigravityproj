@@ -23,7 +23,7 @@ export default function Scanner() {
   const handleScan = () => {
     if (!image) return;
     setScanning(true);
-    
+
     // Simulate AI Processing time
     setTimeout(() => {
       setScanning(false);
@@ -46,7 +46,7 @@ export default function Scanner() {
         </h2>
         <p className="text-text-muted mt-2">Upload a photo of a local climate or infrastructure issue. Our AI will analyze it and reward you for your citizen science!</p>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="dashboard-card flex flex-col items-center justify-center min-h-[400px] relative overflow-hidden bg-gray-50 border-2 border-dashed border-gray-300">
           {!image ? (
@@ -59,10 +59,10 @@ export default function Scanner() {
           ) : (
             <div className="relative w-full h-full flex flex-col">
               <img src={image} alt="Upload" className="w-full h-64 object-cover rounded-t-xl" />
-              
+
               {/* Laser Scanning Animation */}
               {scanning && (
-                <motion.div 
+                <motion.div
                   className="absolute top-0 left-0 w-full h-1 bg-brand-green shadow-[0_0_15px_#10b981]"
                   animate={{ y: [0, 256, 0] }}
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
@@ -74,7 +74,7 @@ export default function Scanner() {
 
               <div className="p-4 bg-white flex-1 rounded-b-xl border-t border-gray-100 flex items-center justify-center">
                 {!scanning && !result && (
-                  <button 
+                  <button
                     onClick={handleScan}
                     className="bg-brand-green hover:bg-brand-green-dark text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors w-full"
                   >
@@ -82,7 +82,7 @@ export default function Scanner() {
                   </button>
                 )}
                 {scanning && <span className="font-bold text-brand-green animate-pulse">Processing Image...</span>}
-                {result && <span className="font-bold text-text-main flex items-center gap-2"><CheckCircle className="text-brand-green"/> Analysis Complete</span>}
+                {result && <span className="font-bold text-text-main flex items-center gap-2"><CheckCircle className="text-brand-green" /> Analysis Complete</span>}
               </div>
             </div>
           )}
@@ -91,7 +91,7 @@ export default function Scanner() {
         <div className="flex flex-col gap-6">
           <div className="dashboard-card h-full flex flex-col justify-center">
             <h3 className="text-xl font-bold text-text-main mb-6 border-b border-gray-100 pb-4">AI Analysis Report</h3>
-            
+
             {!result && !scanning && (
               <div className="flex-1 flex flex-col items-center justify-center text-text-muted text-center gap-4">
                 <AlertTriangle size={32} className="opacity-50" />
@@ -108,7 +108,7 @@ export default function Scanner() {
             )}
 
             {result && (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, x: 20 }}
                 animate={{ opacity: 1, x: 0 }}
                 className="flex-1 flex flex-col justify-center gap-6"
